@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 class deletesDpcts():
 
     def __init__(self, file_name_in, list_ex, column_name):
