@@ -16,6 +16,8 @@ class deletesDpcts():
 class noDuplcFile(deletesDpcts):
 
     def delete_dubl_and_push_in_file(self,  file_name_in, list_ex, column_name):
+        df = self.get_content()
+        print(f'df = {df}')
         ds = df.drop_duplicates(subset=[self.column_name], keep="first")
         print(ds)
         ds.to_csv(f'{self.file_name_in}_dell_dplc_{self.list_ex}', encoding='utf-8', index=False)
