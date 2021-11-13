@@ -6,7 +6,11 @@ from datetime import datetime as dt
 # Request string to retrieve from the database name, mail, phone number from the database
 QUERY = 'SELECT `firstname`, `lastname`, `email`, `telephone` FROM `oc_customer`'
 
+<<<<<<< HEAD
 class DBWriteToFile:
+=======
+class getDBWriteToFile:
+>>>>>>> bdc907c2dd7ed153b609708c785636c16cf4cd96
 
     def __init__(self, host, user, password, db):
         self.host = host
